@@ -90,8 +90,7 @@ def _launches_config_list(step: UiTestStep) -> bool:
 def _shows_welcome_screen(step: UiTestStep) -> bool:
     """Return whether the step should wait for the welcome page."""
     return (
-        step.search_within_response is SearchFor.HELP
-        and step.comment in _WELCOME_SCREEN_COMMENTS
+        step.search_within_response is SearchFor.HELP and step.comment in _WELCOME_SCREEN_COMMENTS
     )
 
 
